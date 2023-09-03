@@ -1,0 +1,194 @@
+:root {
+    --background: #2f3236;
+    --fontcolor: #dbdbdb;
+    --accent1: #2aefcb;
+    --accent2: #e866ec;
+
+}
+
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+header {
+    background-color: transparent;
+    color: var(--fontcolor);
+    padding: 2rem 0;
+    margin: 0 1.5rem;
+}
+
+header h1 {
+    display: inline;
+    font-size: 48px;
+    color: var(--fontcolor);
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+header nav {
+    float: right;
+    font-size: 20px;
+
+}
+
+header nav a {
+    color: var(--fontcolor);
+    text-decoration: none;
+    padding: 0.05rem;
+
+}
+
+header nav ul li {
+    display: inline;
+    flex-wrap: wrap;
+    margin: 1rem;
+
+}
+
+nav ul li :hover {
+    color: var(--accent2);
+    text-decoration: underline;
+    transition: all 0.5s ease-in;
+
+}
+
+#hero {
+    height: 600px;
+    width: 100%;
+    padding-bottom: 2rem;
+    background-image: url(./Heroshot1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+body {
+    color: var(--fontcolor);
+    background-color: var(--background);
+}
+
+main {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+
+    #about-me {
+        grid-area: 1 / 1 / 2 / 2;
+        border-right: 2px solid var(--accent1);
+    }
+
+    .about {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    #work {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    #contact {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .contact ul {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    #work-area {
+        grid-area: 2 / 2 / 3 / 3;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.3fr 2fr;
+        grid-column-gap: .5rem;
+        grid-row-gap: .5rem;
+
+
+        #main-project {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        #smaller-projects {
+            grid-area: 2 / 1 / 3 / 2;
+            /* object-fit: contain;
+            display: grid;
+            grid-template-columns: repeat(2, 50%) fit-content;
+            grid-template-rows: repeat(2, 50%) fit-content;
+            grid-column-gap: .5rem;
+            grid-row-gap: .5rem;
+
+
+            #small-work-top-left {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+
+            #small-work-top-right {
+                grid-area: 1 / 2 / 2 / 3;
+            }
+
+            #small-work-bottom-left {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+
+            #small-work-bottom-right {
+                grid-area: 2 / 2 / 3 / 3;
+            } */
+        }
+    }
+
+
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact ul li {
+    display: inline;
+    padding: 0 1rem;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: var(--fontcolor);
+}
+
+.contact ul li :hover {
+    color: var(--accent2);
+    text-decoration: underline;
+    transition: all 0.5s ease-in;
+}
+
+#main-project a img {
+    max-width: 950px;
+    max-height: auto;
+    border: 5px solid var(--accent1);
+}
+
+/* #small-work-top-left a img{
+    max-width: 475px;
+    max-height: auto;
+    border: 5px solid var(--accent1);
+} */
+
+.img-links{
+
+    
+}
+
+.img-links img {
+    border: 5px solid var(--accent1);
+    float: left;
+    width: 25%;
+    
+    
+}
